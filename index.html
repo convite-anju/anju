@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Convite – Juliana & Andressa</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+  <div id="background-slideshow"></div>
+  <audio id="background-music" src="musica.mp3" loop></audio>
+  <button id="music-toggle" aria-label="Tocar música"><span class="icon">🎶</span></button>
+
+  <div id="envelope">
+    <img src="envelope-verdinho.png" alt="Envelope" />
+    <button id="abrir" aria-label="Abrir convite"></button>
+  </div>
+
+  <div id="main-content">
+    <header>
+      <h1 id="typewriter">Andressa & Juliana</h1>
+      <p id="subtypewriter">20 de Setembro de 2025 • Coelho Neto, RJ</p>
+    </header>
+    
+    <nav>
+      <button data-target="sobre">Sobre nós</button>
+      <button data-target="evento">Detalhes do Evento</button>
+      <button data-target="rsvp">RSVP</button>
+      <button data-target="playlist">Playlist</button>
+      <button data-target="galeria">Galeria</button>
+    </nav>
+
+    <main>
+      <section id="sobre" class="content-section">
+        <h2>Sobre nós</h2>
+        <p>Foi em 2016 que nossos caminhos se cruzaram pela primeira vez. O destino, no entanto, nos levou por estradas diferentes durante seis longos anos… até que, como quem se reencontra com um lar, voltamos uma para a outra para viver, juntas, essa linda história de amor. 💚</p>
+      </section>
+
+      <section id="evento" class="content-section">
+        <h2>Detalhes do Evento</h2>
+        <p><strong>Data:</strong> 20/09/2025, 16h<br />
+          <strong>Local:</strong> Av Pastor Martin Luther king Jr., 9328 – Coelho Neto/RJ<br />
+          <a class="link" href="https://maps.app.goo.gl/7w26hCHCTNv3GMwt9" target="_blank">Ver no Google Maps</a>
+        </p>
+      </section>
+
+      <section id="rsvp" class="content-section">
+        <h2>Confirme sua Presença</h2>
+        <p>Para brindar conosco, confirme até 31/08/2025!</p>
+        <p><a class="link" href="https://wa.me/5521968448304?text=%20%E2%9C%85%EF%B8%8F%20Oii%20%2C%20estou%20passando%20para%20confirmar%20presen%C3%A7a%20no%20casamento%20de%20voc%C3%AAs." target="_blank">Clique aqui para confirmar via WhatsApp</a></p>
+      </section>
+
+      <section id="playlist" class="content-section">
+        <h2>Entre no Clima</h2>
+        <p>Nossa trilha sonora já está no ar. Aperte o play e sinta a vibe! 🎶</p>
+        <p><a class="link" href="https://open.spotify.com/playlist/1R0MD1vVvP7DN7dR4IjlC9?si=u6OK5YD_SPqwK1KfT78eDg&pi=bJPn8TN-T2iMU" target="_blank">Ouvir no Spotify</a></p>
+      </section>
+
+      <section id="galeria" class="content-section">
+        <h2>Momentos Felizes</h2>
+        <p>Prévia das fotos que contam nossa história. 📸</p>
+        <div class="galeria-container">
+          <img src="./foto1.jpg" alt="Foto 1">
+          <img src="./foto2.jpg" alt="Foto 2">
+          <img src="./foto3.jpg" alt="Foto 3">
+          <img src="./foto4.jpg" alt="Foto 4">
+          <img src="./foto5.jpg" alt="Foto 5">
+          <img src="./foto6.jpg" alt="Foto 6">
+          <img src="./foto7.jpg" alt="Foto 7">
+          <img src="./foto8.jpg" alt="Foto 8">
+          <img src="./foto9.jpg" alt="Foto 9">
+          <img src="./foto10.jpg" alt="Foto 10">
+          <!-- Adicione mais imagens aqui -->
+        </div>
+
+        <div id="modal-galeria">
+          <span id="fechar-modal">×</span>
+          <img id="modal-img" src="" alt="Imagem ampliada">
+        </div>
+      </section>
+    </main>
+
+    <footer><p id="footer-text">Com amor, Andressa & Juliana 💚</p></footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
